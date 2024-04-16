@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website with Header, Menu, and Table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav {
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .container {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>SQL Aggregate Functions</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Meaning</h2>
+        <p>An aggregate function is a function that performs a calculation on a set of values, and returns a single value.
+
+            Aggregate functions are often used with the GROUP BY clause of the SELECT statement. The GROUP BY clause splits the result-set into groups of values and the aggregate function can be used to return a single value for each group.
+            
+            The most commonly used SQL aggregate functions are:
+            
+            MIN() - returns the smallest value within the selected column
+            MAX() - returns the largest value within the selected column
+            COUNT() - returns the number of rows in a set
+            SUM() - returns the total sum of a numerical column
+            AVG() - returns the average value of a numerical column
+            Aggregate functions ignore null values (except for COUNT()).</p>
+            <h2>MIN(),MAX()</h2>
+            <p>The MIN() function returns the smallest value of the selected column.
+
+                The MAX() function returns the largest value of the selected column.</p>
+
+            <H4>SYNTEX: </H4>
+                <p>SELECT MIN(column_name)
+                    FROM table_name
+                    WHERE condition;
+                    SELECT MAX(column_name)
+                    FROM table_name
+                    WHERE condition;</P>
+                <p></p>
+            <h2>Count()</h2>
+            <p>The COUNT() function returns the number of rows that matches a specified criterion.</p>
+            <H4>SYNTEX:</H4>
+            <p>SELECT COUNT(column_name)
+                FROM table_name
+                WHERE condition;</p>
+                <H2>SUM() Function</H2>
+                <P>The SUM() function returns the total sum of a numeric column.</P>
+                <H4>SYNTEX:</H4>
+                <P>SELECT SUM(column_name)
+                    FROM table_name
+                    WHERE condition;</P>
+                    <H2>AVG()</H2>
+                    <P>The AVG() function returns the average value of a numeric column.</P>
+                     <H4>SYNTEX:</H4>
+                     <P>SELECT AVG(column_name)
+                        FROM table_name
+                        WHERE condition;</P>
+
+
+
+                    <h2>Database Tables</h2>
+                    <p></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>CustomerID</th>
+                    <th>CustomerName</th>
+                    <th>ContactName</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>PostelCode</th>
+                    <th>Country</th>
+        
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>arun</td>
+                    <td>Arun</td>
+                    <td>berlin</td>
+                    <td>1220</td>
+                    <td>1227</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>2</td>  	
+                  <td>Ana Trujillo Emparedados y helados</td>
+                  <td> Ana Trujillo</td>
+                  <td>oxford street</td>
+                  <td>México D.F.</td>
+                  <td>05021</td>
+                  <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                       <td>Around the Horn</td>
+                    <td>Thomas Hardy</td>
+                    <td>120 Hanover Sq</td>
+                    <td>london</td>
+                    <td>WA1 1DP</td>
+                    <td>UK</td>
+                        
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Antone</td>
+                    <td>danny</td>
+                    <td>21 street</td>
+                    <td>london</td>
+                    <td>160022</td>
+                    <td>UK</td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

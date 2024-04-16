@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website with Header, Menu, and Table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav {
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .container {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>The SQL BACKUP DATABASE </h1>
+    </header>
+    
+    <div class="container">
+        <h2>The SQL BACKUP DATABASE Statement</h2>
+        <p>The BACKUP DATABASE statement is used in SQL Server to create a full back up of an existing SQL database.</p>
+            <h2>Syntex</h2>
+            <p>BACKUP DATABASE databasename
+                TO DISK = 'filepath';</p>
+                <h2>Example</h2>
+                <p>BACKUP DATABASE testDB
+                    TO DISK = 'D:\backups\testDB.bak';</p>
+                    
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website with Header, Menu, and Table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav {
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .container {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>INTRODUCTION</h1>
+    </header>
+    
+    <div class="container">
+        <h2>SQL stand for?</h2>
+        <p>SQL (Structured Query Language) is a programming language for storing, managing, manipulating, and processing data in relational databases. SQL has been around since the 1970s, and was standardized by the American National Standards Institute (ANSI) in 1986. Since then, SQL has become the most widely used language for managing relational databases and has undergone several revisions to keep pace with the evolving needs of the database industry.
+
+            SQL is pronounced “sequel” or sometimes “ess-cue-ell.”</p>
+            <h2>What is SQl used for?</h2>
+            <p>SQL is an essential part of the technology stack for many organizations and is widely used in business, government, and scientific applications across many roles including: Data Analysts, Business Intelligence Analysts, Data Scientists, Database Developers, and Data Engineers. SQL is used by organizations to interact with databases which store and manage data in a structured and efficient way.
+
+                The following are common tasks that people use SQL for:
+                
+                Creating, modifying, and deleting database tables and records
+                Inserting, updating, and deleting data in a database
+                Retrieving data from a database with SELECT statements
+                Grouping and aggregating data
+                Joining data from multiple tables
+                Creating views and stored procedures
+                Performing data analysis and data mining
+                Managing the security and permissions of a database
+                Monitoring and optimizing database performance
+                Backing up and restoring databases</p>
+                <h2>Statements, Functions, and Clauses</h2>
+                <p>If you are learning SQL, you’ll see different components, and it’s important to understand what they are used for:
+
+                    Statements: Used to carry out tasks in the database
+                    Examples: SELECT, INSERT, UPDATE, DELETE, ALTER, DROP, CREATE, GRANT, REVOKE
+                    Clauses: Components of SQL statements that specify specific conditions, restrictions or operations to be performed
+                    Examples: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT, OFFSET, JOIN, UNION, WITH
+                    Expressions: Combinations of values, operators, and functions that produce a single value
+                    Examples: mathematical operations, concatenation, Functions, CASE, Subquery
+                    Predicates: Conditions that evaluate to either true, false or unknown in SQL. They are used in the WHERE clause of SQL to specify a subset of rows to be returned from a database table
+                    Examples: Equality, Inequality, Comparison, BETWEEN, LIKE, NULL, AND, OR, NOT
+                    Operators: Symbols or keywords used to perform operations and comparisons in SQL expressions
+                    Examples: Arithmetic, Comparison, Logical, IN, LIKE, BETWEEN, IS NULL
+                    Functions: Built-in or user-defined operations that perform specific calculations or manipulations on data. Examples: Aggregates, Date & Time, String, Conversion, Mathematical
+                    Data types: Specify and define the type of data that a column in a table can hold
+                    Examples: Numeric, Characters and Strings, Date & Time, Binary, Boolean
+                    Keywords: Special reserved words used in SQL that have a specific meaning and cannot be used as identifiers (such as table or column names) without being quoted
+                    Examples: SELECT, FROM, WHERE, AND, OR.
+                    You can always write detailed queries using SQL for your desired use case. But if you want to explore making it a little easier on yourself, Coginiti has features to help you analyze your data if you forgot to write the SQL or you’re simply still learning. As an example, Coginiti has an advanced grid to quickly filter, sort, pivot, and aggregate your data.</p>
+                    <h2>Database Tables</h2>
+                    <p>A database most often contains one or more tables. Each table is identified by a name (e.g. "Customers" or "Orders"), and contain records (rows) with data.
+
+                        In this tutorial we will use the well-known Northwind sample database (included in MS Access and MS SQL Server).
+                        
+                        Below is a selection from the Customers table used in the examples:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>CustomerID</th>
+                    <th>CustomerName</th>
+                    <th>ContactName</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>PostelCode</th>
+                    <th>Country</th>
+        
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>arun</td>
+                    <td>Arun</td>
+                    <td>berlin</td>
+                    <td>1220</td>
+                    <td>1227</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>2</td>  	
+                  <td>Ana Trujillo Emparedados y helados</td>
+                  <td> Ana Trujillo</td>
+                  <td>oxford street</td>
+                  <td>México D.F.</td>
+                  <td>05021</td>
+                  <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                       <td>Around the Horn</td>
+                    <td>Thomas Hardy</td>
+                    <td>120 Hanover Sq</td>
+                    <td>london</td>
+                    <td>WA1 1DP</td>
+                    <td>UK</td>
+                        
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Antone</td>
+                    <td>danny</td>
+                    <td>21 street</td>
+                    <td>london</td>
+                    <td>160022</td>
+                    <td>UK</td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
